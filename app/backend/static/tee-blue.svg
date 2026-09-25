@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="blue cotton T-shirt">
+  <rect width="480" height="480" rx="24" fill="#f3f1ed"/>
+  <path d="M160 100 110 125 65 205 125 240 155 195 155 385 325 385 325 195 355 240 415 205 370 125 320 100 285 90Q240 140 195 90Z" fill="#496f9c" stroke="#20252b" stroke-width="3"/>
+  <path d="M195 90Q240 140 285 90M165 370H315" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="4"/>
+</svg>

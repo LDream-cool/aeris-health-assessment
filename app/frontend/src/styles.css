@@ -1,0 +1,59 @@
+:root { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #242d29; background: #f7f6f2; font-synthesis: none; line-height: 1.5; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button, select { cursor: pointer; }
+button:disabled, input:disabled, select:disabled { cursor: not-allowed; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid #446fba; outline-offset: 4px; }
+.site-header { max-width: 1280px; margin: auto; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #dedfd7; }
+.wordmark { font-size: 26px; font-weight: 750; letter-spacing: .15em; text-decoration: none; }
+.wordmark span { display: block; font-size: 9px; letter-spacing: .13em; font-weight: 500; }
+.cart-badge { display: flex; gap: 12px; align-items: center; font-size: 14px; }
+.cart-badge span { background: #e6eadf; border-radius: 50%; min-width: 30px; padding: 4px 8px; text-align: center; }
+.pdp { max-width: 1184px; margin: 52px auto 72px; padding: 0 28px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: start; }
+.product-visual { background: #efeee7; border-radius: 12px; overflow: hidden; }
+.product-visual img { width: 100%; display: block; aspect-ratio: 1; object-fit: contain; }
+.product-visual p { text-align: center; font-size: 9px; letter-spacing: .16em; padding: 16px; margin: 0; }
+.product-details { padding: 8px 0; min-width: 0; }
+.eyebrow { font-size: 10px; letter-spacing: .17em; color: #636b61; margin: 0 0 16px; }
+h1 { font-size: clamp(28px, 3vw, 38px); line-height: 1.2; font-weight: 600; letter-spacing: -.03em; margin: 0 0 18px; }
+.description { font-size: 15px; color: #60665f; max-width: 390px; }
+.price { font-size: 25px; margin: 22px 0 28px; font-weight: 550; }
+.selectors { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { min-width: 0; }
+.field label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 600; }
+select, input { width: 100%; height: 48px; border: 1px solid #a8aea3; border-radius: 5px; background: #fff; padding: 0 12px; color: #242d29; }
+input:disabled, select:disabled { background: #eeeee8; color: #73776c; }
+.stock { font-size: 13px; min-height: 21px; margin: 16px 0 22px; color: #38573b; }
+.sold-out { color: #935021; }
+.purchase-row { display: flex; align-items: end; gap: 14px; }
+.quantity { width: 86px; flex-shrink: 0; }
+button { border-radius: 5px; border: 1px solid transparent; padding: 12px 20px; font-weight: 600; }
+.primary { background: #314b38; color: white; min-height: 48px; }
+.primary:hover:not(:disabled) { background: #203a27; }
+.primary:disabled { background: #dfe3da; color: #606859; }
+.add-button { flex: 1; }
+.secondary { color: #314b38; background: white; border-color: #75836c; }
+.helper { font-size: 12px; color: #62695f; min-height: 36px; }
+.feedback { border-radius: 5px; font-size: 14px; padding: 12px 14px; }
+.feedback p { margin: 0 0 10px; }
+.error { background: #fff0e9; color: #823f26; }
+.success { background: #e6efdf; color: #2d5132; }
+.product-note { border-top: 1px solid #dedfd7; padding-top: 22px; margin-top: 28px; font-size: 13px; }
+.product-note p { color: #60665f; margin: 6px 0; }
+footer { max-width: 1184px; margin: auto; padding: 24px 28px; color: #646b60; font-size: 12px; border-top: 1px solid #dedfd7; }
+.loading-shell { max-width: 720px; margin: 60px auto; padding: 24px; }
+.loading-shell > p, .loading-shell > div { margin-top: 60px; }
+.skip-link { position: absolute; top: -100px; left: 16px; background: white; padding: 12px; z-index: 2; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 700px) {
+  .site-header { padding: 20px; }
+  .pdp { grid-template-columns: 1fr; gap: 28px; padding: 0 20px; margin: 24px auto 40px; }
+  .product-visual { max-width: 480px; width: 100%; margin: auto; }
+  .product-visual p { font-size: 8px; padding: 12px; }
+  .product-details { padding: 0; }
+  h1 { font-size: 30px; }
+  .price { margin: 18px 0 24px; }
+  footer { margin: 0 20px; padding: 20px 0; }
+}
